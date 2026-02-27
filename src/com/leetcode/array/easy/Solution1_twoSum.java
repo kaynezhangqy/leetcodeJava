@@ -1,14 +1,14 @@
 package com.leetcode.array.easy;
 
 /**
- * Two Sum - LeetCode Problem 1
+ * Two Sum - LeetCode Problem 1 (Alternative Solution)
  * 
  * Given an array of integers nums and an integer target, 
  * return indices of the two numbers such that they add up to target.
  * 
- * This implementation uses a brute force approach with O(n²) time complexity.
+ * This implementation also uses a brute force approach with O(n²) time complexity.
  */
-public class TwoSum {
+public class Solution1_twoSum {
 
   /**
    * Finds two numbers in the array that add up to the target using brute force.
@@ -30,4 +30,5 @@ public class TwoSum {
     // Return empty array if no solution found
     return new int[]{};
   }
+
 }

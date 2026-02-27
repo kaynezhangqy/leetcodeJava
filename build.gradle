@@ -1,9 +1,14 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group = 'leetcodeJava'
 version = '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'com.leetcode.Main'
+}
 
 repositories {
     mavenCentral()
