@@ -30,4 +30,18 @@ public class TwoSum {
     // Return empty array if no solution found
     return new int[]{};
   }
+
+    public int[] twoSum1(int[] nums, int target) {
+        // Brute force approach: check all possible pairs
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    return new int[]{i, j};
+                }
+            }
+        }
+
+        // Return empty array if no solution found
+        return new int[]{};
+    }
 }
