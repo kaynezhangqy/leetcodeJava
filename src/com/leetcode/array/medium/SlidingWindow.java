@@ -59,7 +59,7 @@ public class SlidingWindow {
         int n = s.length();
         int x = 0, y = 0;
 
-        Set<Long> set = new HashSet<>();
+        Set<String> set = new HashSet<>();
         for (int i = 0; i < n; i++) {
             char c = s.charAt(i);
             x += DIRS[c][0];
@@ -68,13 +68,46 @@ public class SlidingWindow {
             if (left < 0) {
                 continue;
             }
-            set.add((long) (x + n) << 20 | (y + n));
+            set.add(x + "," + y);
             char out = s.charAt(left);
             x -= DIRS[out][0];
             y -= DIRS[out][1];
         }
         return set.size();
 
+    }
+
+    //    2134. 最少交换次数来组合所有的 1 II
+    public int minSwaps(int[] nums) {
+        int totalOnes = 0;
+        for (int num : nums) {
+            if (num == 1) {
+                totalOnes++;
+            }
+        }
+        if (totalOnes == 0) {
+            return 0;
+        }
+        int n = nums.length;
+        int maxOnesInWindow = 0;
+        int currentOnes = 0;
+        // 扩展数组为两倍长度以处理环形
+        int[] extended = new int[2 * n];
+        System.arraycopy(nums, 0, extended, 0, n);
+        System.arraycopy(nums, 0, extended, n, n);
+        // 滑动窗口大小为totalOnes
+        for (int i = 0; i < 2 * n; i++) {
+            if (extended[i] == 1) {
+                currentOnes++;
+            }
+            if (i >= totalOnes) {
+                if (extended[i - totalOnes] == 1) {
+                    currentOnes--;
+                }
+                maxOnesInWindow = Math.max(maxOnesInWindow, currentOnes);
+            }
+        }
+        return totalOnes - maxOnesInWindow;
     }
 
 }

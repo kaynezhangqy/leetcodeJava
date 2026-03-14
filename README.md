@@ -39,6 +39,8 @@ test/
 
 #### 中等 (Medium)  
 - **Product of Array Except Self (除自身以外数组的乘积)** - 计算数组中每个元素除自身外的乘积
+- **Trapping Rain Water (接雨水)** - 计算按高度图排列的柱子能接多少雨水
+  - `TrappingRainWater.java` - 使用双指针法，时间复杂度 O(n)，空间复杂度 O(1)
 
 ### 字符串 (String)
 
