@@ -1,6 +1,27 @@
 package com.leetcode.top100;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution {
+
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        int n = nums.length;
+        for (int num : nums) {
+            int x = (num - 1) % nums.length;
+            if (nums[x] <= n) {
+                nums[x] += n;
+            }
+        }
+        List<Integer> res = new ArrayList<>();
+
+        for (int i : nums) {
+            if (nums[i] <= nums.length) {
+                res.add(i + 1);
+            }
+        }
+        return res;
+    }
 
     public String longestPalindrome(String s) {
         if (s == null) {

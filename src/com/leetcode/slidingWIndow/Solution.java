@@ -84,6 +84,30 @@ class Solution {
         return ans;
     }
 
+    public int minSwaps(int[] nums) {
+        int k = 0;
+        for (int num : nums) {
+            k += num;
+        }
+        //如果没有1 直接返回0
+        if (k == 0) {
+            return 0;
+        }
+        int n = nums.length;
+        int max1 = 0;
+        int cnt1 = 0;
+        for (int i = 0; i < n + k - 1; i++) {
+            cnt1 += nums[i % n];
+            //没到窗口的长度 一直加
+            if (i >= k - 1) {
+                max1 = Math.max(max1, cnt1);
+                cnt1 -= nums[i - k + 1];
+            }
+        }
+        return k - max1;
+
+    }
+
     public int lengthOfLongestSubstring(String s) {
         int res = 0;
         int[] mp = new int[128];
