@@ -1,5 +1,9 @@
 package com.leetcode.string.medium;
 
+/**
+ * No.1689 Partitioning Into Minimum Number Of Deci-Binary Numbers
+ * @see <a href="https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/">LeetCode No.1689</a>
+ */
 public class MinPartitions {
 
     public int minPartitions(String n) {

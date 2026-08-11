@@ -2,7 +2,11 @@ package com.leetcode.array.easy;
 
 import com.leetcode.common.ListNode;
 
-public class Solution {
+/**
+ * No.21 Merge Two Sorted Lists
+ * @see <a href="https://leetcode.cn/problems/merge-two-sorted-lists/">LeetCode No.21</a>
+ */
+public class MergeTwoLists {
 
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode();

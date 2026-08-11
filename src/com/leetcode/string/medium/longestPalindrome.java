@@ -1,6 +1,10 @@
 package com.leetcode.string.medium;
 
 
+/**
+ * No.5 Longest Palindromic Substring
+ * @see <a href="https://leetcode.cn/problems/longest-palindromic-substring/">LeetCode No.5</a>
+ */
 public class LongestPalindrome {
 
     /**

@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class SlidingWindow {
 
-    // 1423. 可获得的最大点数
+    // No.1423 Maximum Points You Can Obtain from Cards - https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/
     public int maxScore(int[] cardPoints, int k) {
         int n = cardPoints.length;
         int m = n - k;
@@ -48,7 +48,7 @@ public class SlidingWindow {
         return count;
     }
 
-    //3694. 删除子字符串后不同的终点
+    // No.3694 Delete Substrings to Get Different Endpoints - https://leetcode.cn/problems/delete-substrings-to-get-different-endpoints/
     public int distinctPoints(String s, int k) {
 
         final int[][] DIRS = new int[128][];
@@ -77,7 +77,7 @@ public class SlidingWindow {
 
     }
 
-    //    2134. 最少交换次数来组合所有的 1 II
+    // No.2134 Minimum Swaps to Group All 1's Together II - https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together-ii/
     public int minSwaps(int[] nums) {
         int totalOnes = 0;
         for (int num : nums) {

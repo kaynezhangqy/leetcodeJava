@@ -2,6 +2,7 @@ package com.leetcode.array.easy;
 
 /**
  * Two Sum - LeetCode Problem 1
+ * @see <a href="https://leetcode.cn/problems/two-sum/">LeetCode No.1</a>
  * <p>
  * Given an array of integers nums and an integer target, return indices of the two numbers such
  * that they add up to target.

@@ -1,5 +1,9 @@
 package com.leetcode.array.medium;
 
+/**
+ * No.42 Trapping Rain Water
+ * @see <a href="https://leetcode.cn/problems/trapping-rain-water/">LeetCode No.42</a>
+ */
 public class TrappingRainWater {
 
 

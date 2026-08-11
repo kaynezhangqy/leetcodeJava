@@ -1,12 +1,13 @@
-package com.leetcode.slidingWIndow;
+package com.leetcode.slidingwindow;
 
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 
-class Solution {
+class ContinuousSubarrays {
 
+    // No.2762 Continuous Subarrays - https://leetcode.cn/problems/continuous-subarrays/
     public long continuousSubarraysV2(int[] nums) {
         long ans = 0;
         Deque<Integer> minQ = new LinkedList<>();
@@ -51,7 +52,7 @@ class Solution {
 
     }
 
-    //2762
+    // No.2762 Continuous Subarrays - https://leetcode.cn/problems/continuous-subarrays/
     public long continuousSubarrays(int[] nums) {
         long ans = 0;
         int left = 0;
@@ -84,6 +85,7 @@ class Solution {
         return ans;
     }
 
+    // No.2134 Minimum Swaps to Group All 1's Together II - https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together-ii/
     public int minSwaps(int[] nums) {
         int k = 0;
         for (int num : nums) {
@@ -108,6 +110,7 @@ class Solution {
 
     }
 
+    // No.3 Longest Substring Without Repeating Characters - https://leetcode.cn/problems/longest-substring-without-repeating-characters/
     public int lengthOfLongestSubstring(String s) {
         int res = 0;
         int[] mp = new int[128];
@@ -124,6 +127,7 @@ class Solution {
         return res;
     }
 
+    // No.3325 Count Substrings With K-Frequency Characters I - https://leetcode.cn/problems/count-substrings-with-k-frequency-characters-i/
     public long countSubarrays(int[] nums, long k) {
 
         int left = 0;

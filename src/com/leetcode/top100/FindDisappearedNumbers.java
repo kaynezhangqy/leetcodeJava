@@ -3,8 +3,9 @@ package com.leetcode.top100;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution {
+public class FindDisappearedNumbers {
 
+    // No.448 Find All Numbers Disappeared in an Array - https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/
     public List<Integer> findDisappearedNumbers(int[] nums) {
         int n = nums.length;
         for (int num : nums) {
@@ -23,6 +24,7 @@ public class Solution {
         return res;
     }
 
+    // No.5 Longest Palindromic Substring - https://leetcode.cn/problems/longest-palindromic-substring/
     public String longestPalindrome(String s) {
         if (s == null) {
             return "";

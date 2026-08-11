@@ -1,11 +1,20 @@
+# IDE
 .idea/
-# Ignore Gradle project-specific cache directory
+*.iml
+*.ipr
+*.iws
+out/
+
+# Gradle
 .gradle
-
-# Ignore Gradle build output directory
 build
-lib/
-
 gradlew
 gradlew.bat
 gradle/
+
+# Local libraries
+lib/
+
+# Eclipse / other build output
+bin/
+tmp/
